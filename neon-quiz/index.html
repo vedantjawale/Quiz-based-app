@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="glow-effect"></div>
+        
+        <!-- Quiz Header -->
+        <header>
+            <h1>NEON <span class="highlight">QUIZ</span></h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </header>
+        
+        <!-- Quiz Content -->
+        <div id="quiz-content">
+            <!-- Question Section -->
+            <div id="question-container">
+                <h2 id="question-text">Question goes here</h2>
+                <div id="answers-container">
+                    <!-- Answer buttons will be generated here -->
+                </div>
+                <div id="button-container">
+                    <button id="submit-btn" class="action-btn">Submit</button>
+                    <button id="next-btn" class="action-btn hidden">Next</button>
+                </div>
+            </div>
+            
+            <!-- Results Section (initially hidden) -->
+            <div id="results-container" class="hidden">
+                <h2>Quiz Results</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="score-value">0</span>
+                        <span id="score-total">/0</span>
+                    </div>
+                </div>
+                <div id="results-breakdown">
+                    <!-- Results will be generated here -->
+                </div>
+                <button id="restart-btn" class="action-btn">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
